@@ -31,7 +31,7 @@ Variable names shall start with "Main_" and be declared as static.
 
 Main has two sections:
 
-1. Initialization which is run once on power-up or reset.  All drivers and applications are setup here without timing
+1. Initialization which is run onc    e on power-up or reset.  All drivers and applications are setup here without timing
 contraints but must complete execution regardless of success or failure of starting the application. 
 
 2. Super loop which runs infinitely giving processor time to each application.  The total loop time should not exceed
