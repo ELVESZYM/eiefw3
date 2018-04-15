@@ -79,8 +79,17 @@ void GpioSetup(void)
 {
   /* Set all of the pin function registers in port 0 */
   NRF_GPIO->PIN_CNF[P0_29_INDEX] = P0_29_LED_RED_CNF;
-   
+  NRF_GPIO->PIN_CNF[P0_08_INDEX] = P0_08_MRDY;
+  NRF_GPIO->PIN_CNF[P0_09_INDEX] = P0_09_SRDY;
+  NRF_GPIO->PIN_CNF[P0_10_INDEX] = P0_10_CS;
+  NRF_GPIO->PIN_CNF[P0_11_INDEX] = P0_11_SCK;
+  NRF_GPIO->PIN_CNF[P0_12_INDEX] = P0_12_MISO;
+  NRF_GPIO->PIN_CNF[P0_13_INDEX] = P0_13_MOSI;
 } /* end GpioSetup() */
+
+ void SPISetup(void)
+ {
+ }
 
 
 /*----------------------------------------------------------------------------------------------------------------------

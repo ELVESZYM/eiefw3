@@ -55,7 +55,7 @@ void main(void)
   /* Clock, GPIO and SoftDevice setup */  
   ClockSetup();
   GpioSetup();
-
+  SPISetup();
   __enable_interrupt();
   
   // Enable the s310 SoftDevice Stack. If Failure, we shall not progress as 
